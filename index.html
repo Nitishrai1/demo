@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelance Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <!-- Main Container -->
+  <div class="container mx-auto">
+    <div class="flex flex-col md:flex-row justify-between">
+
+      <!-- Left Section (Profile) -->
+      <div class="bg-white rounded-lg shadow-md p-6 mb-6 md:w-1/4">
+        <!-- Profile Picture -->
+        <img src="https://via.placeholder.com/100" alt="Profile" class="rounded-full mx-auto w-24 h-24 object-cover mb-4">
+        <!-- Username -->
+        <h2 class="text-xl font-bold text-center mb-2">tanish904</h2>
+        <p class="text-gray-500 text-center">Level 0</p>
+
+        <!-- Stats -->
+        <div class="mt-4">
+          <p class="text-gray-700 mb-2">Success score: <span>-</span></p>
+          <p class="text-gray-700 mb-2">Rating: <span>★</span></p>
+          <p class="text-gray-700 mb-2">Response rate: <span>-</span></p>
+        </div>
+
+        <!-- Button -->
+        <button class="w-full bg-blue-500 text-white py-2 mt-4 rounded-lg">Go to level overview</button>
+
+        <!-- Earned in September -->
+        <div class="mt-4 bg-gray-50 p-4 rounded-lg">
+          <p class="text-gray-700 mb-2">Earned in September</p>
+          <p class="text-xl font-bold">$0</p>
+        </div>
+      </div>
+
+      <!-- Right Section (Steps to Top Seller) -->
+       
+      <div class="bg-white rounded-lg shadow-md p-6 md:ml-6 md:w-3/4">
+        <div class="bg-gray-100 p-4 mb-4 flex justify-between items-center rounded-lg shadow-sm">
+            <!-- Left Side: Number of Active Projects -->
+            <div>
+              <h3 class="text-lg font-bold">Active Projects: 3</h3>
+            </div>
+          
+            <!-- Right Side: List of Projects -->
+            <div class="relative inline-block text-left">
+                <!-- Dropdown Trigger Button -->
+                <button class="inline-flex button-down justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                  Projects
+                  <!-- Dropdown Icon -->
+                  <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+              
+                <!-- Dropdown Menu -->
+                <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden group-hover:block" role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
+                  <div class="py-1" role="none">
+                    <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem">Project 1</a>
+                    <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem">Project 2</a>
+                    <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem">Project 3</a>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+        <h2 class="text-2xl font-bold mb-4">3 steps to become a top seller on Fiverr</h2>
+        <p class="text-gray-600 mb-6">The key to your success on Fiverr is the brand you build for yourself through your Fiverr reputation. We gathered some tips and resources to help you become a leading seller on Fiverr.</p>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <!-- Step 1 -->
+          <div class="text-center">
+            <div class="bg-green-100 p-4 rounded-full mb-4 inline-block">
+              <img src="https://via.placeholder.com/50" alt="Get noticed">
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Get noticed</h3>
+            <p class="text-gray-500 mb-4">Tap into the power of social media by sharing your Gig, and get expert help to grow your impact.</p>
+            <button class="bg-blue-500 text-white py-2 px-4 rounded-lg">Share Your Gigs</button>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="text-center">
+            <div class="bg-yellow-100 p-4 rounded-full mb-4 inline-block">
+              <img src="https://via.placeholder.com/50" alt="Get more skills">
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Get more skills & exposure</h3>
+            <p class="text-gray-500 mb-4">Hone your skills and expand your knowledge with online courses. Gain more exposure with every course completed.</p>
+            <button class="bg-blue-500 text-white py-2 px-4 rounded-lg">Explore Learn</button>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="text-center">
+            <div class="bg-blue-100 p-4 rounded-full mb-4 inline-block">
+              <img src="https://via.placeholder.com/50" alt="Become successful">
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Become a successful seller</h3>
+            <p class="text-gray-500 mb-4">Watch this free course to grow your career as an online freelancer.</p>
+            <button class="bg-blue-500 text-white py-2 px-4 rounded-lg">Watch Free Course</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+   <!-- Footer Section -->
+  <footer class="bg-white p-10 mt-10">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+        
+        <!-- Company Section -->
+        <div>
+          <h3 class="font-bold mb-4">COMPANY</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-600">About Us</a></li>
+            <li><a href="#" class="text-gray-600">Contact Us</a></li>
+            <li><a href="#" class="text-gray-600">FAQs</a></li>
+            <li><a href="#" class="text-gray-600">Testimonials</a></li>
+            <li><a href="#" class="text-gray-600">Become an Affiliate</a></li>
+            <li><a href="#" class="text-gray-600">Press Release</a></li>
+            <li><a href="#" class="text-gray-600">Partners</a></li>
+            <li><a href="#" class="text-gray-600">Non Profit</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Section -->
+        <div>
+          <h3 class="font-bold mb-4">SERVICES</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-600">Website Builder</a></li>
+            <li><a href="#" class="text-gray-600">One To One Projects</a></li>
+            <li><a href="#" class="text-gray-600">Graphic & Logo Design Contests</a></li>
+            <li><a href="#" class="text-gray-600">Creative Gigs</a></li>
+            <li><a href="#" class="text-gray-600">T-Shirt Printing</a></li>
+            <li><a href="#" class="text-gray-600">Custom Clothing</a></li>
+            <li><a href="#" class="text-gray-600">Business Cards</a></li>
+            <li><a href="#" class="text-gray-600">Custom T-Shirts</a></li>
+            <li><a href="#" class="text-gray-600">Custom Tank Tops</a></li>
+            <li><a href="#" class="text-gray-600">PrintShop</a></li>
+            <li><a href="#" class="text-gray-600">Templates</a></li>
+          </ul>
+        </div>
+
+        <!-- Tools Section -->
+        <div>
+          <h3 class="font-bold mb-4">TOOLS</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-600">Business Tools</a></li>
+            <li><a href="#" class="text-gray-600">Logo Maker</a></li>
+            <li><a href="#" class="text-gray-600">Brand Kit</a></li>
+            <li><a href="#" class="text-gray-600">T-Shirt Maker</a></li>
+            <li><a href="#" class="text-gray-600">Business Card Maker</a></li>
+            <li><a href="#" class="text-gray-600">Flyer Maker</a></li>
+            <li><a href="#" class="text-gray-600">Comic Maker</a></li>
+            <li><a href="#" class="text-gray-600">Email Signature Generator</a></li>
+            <li><a href="#" class="text-gray-600">Digital Business Card</a></li>
+            <li><a href="#" class="text-gray-600">Gift Cards</a></li>
+            <li><a href="#" class="text-gray-600">Studio</a></li>
+          </ul>
+        </div>
+
+        <!-- Get a Design Section -->
+        <div>
+          <h3 class="font-bold mb-4">GET A DESIGN</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-600">Graphic Design</a></li>
+            <li><a href="#" class="text-gray-600">Logo Design</a></li>
+            <li><a href="#" class="text-gray-600">Label Design</a></li>
+            <li><a href="#" class="text-gray-600">Packaging Design</a></li>
+            <li><a href="#" class="text-gray-600">Website Design</a></li>
+            <li><a href="#" class="text-gray-600">T-Shirt Design</a></li>
+            <li><a href="#" class="text-gray-600">Brochure Design</a></li>
+            <li><a href="#" class="text-gray-600">Book Cover Design</a></li>
+            <li><a href="#" class="text-gray-600">Business Card Design</a></li>
+            <li><a href="#" class="text-gray-600">Funny T Shirts</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources Section -->
+        <div>
+          <h3 class="font-bold mb-4">RESOURCES</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-600">Blog</a></li>
+            <li><a href="#" class="text-gray-600">Graphic Designers</a></li>
+            <li><a href="#" class="text-gray-600">Awarded Designs</a></li>
+            <li><a href="#" class="text-gray-600">Interactive Guides</a></li>
+            <li><a href="#" class="text-gray-600">Logo Ideas</a></li>
+            <li><a href="#" class="text-gray-600">Events</a></li>
+            <li><a href="#" class="text-gray-600">Learn</a></li>
+            <li><a href="#" class="text-gray-600">Size</a></li>
+            <li><a href="#" class="text-gray-600">Pro Designer</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="mt-8 flex flex-col md:flex-row justify-between items-center border-t border-gray-300 pt-4">
+        <div class="text-gray-600 text-sm">&copy; Designhill.com</div>
+        <div class="text-gray-600 text-sm mt-4 md:mt-0 space-x-4">
+          <a href="#" class="hover:underline">Privacy</a>
+          <a href="#" class="hover:underline">Terms</a>
+          <a href="#" class="hover:underline">Cookies</a>
+          <a href="#" class="hover:underline">Copyright</a>
+        </div>
+        <!-- Social Media Icons -->
+        <div class="flex space-x-4 mt-4 md:mt-0">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-6 h-6"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Pinterest" class="w-6 h-6"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="LinkedIn" class="w-6 h-6"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="w-6 h-6"></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+<script>
+    const dropdownButton = document.querySelector('button-down');
+const dropdownMenu = document.querySelector('.absolute');
+
+dropdownButton.addEventListener('click', () => {
+  dropdownMenu.classList.toggle('hidden');
+});
+
+</script>
+</html>
