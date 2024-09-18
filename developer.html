@@ -188,5 +188,51 @@
     menuToggle.addEventListener('click', () => {
       menu.classList.toggle('hidden');
     });
+ 
+// Handle form submission
+const form = document.getElementById('gig-form');
+const saveButton = document.getElementById('save-button');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const gigTitle = document.getElementById('gig-title').value;
+  const category = document.getElementById('category').value;
+  const searchTags = document.getElementById('search-tags').value;
+  const positiveKeywords = document.getElementById('positive-keywords').value;
+
+  const data = {
+    gigTitle,
+    category,
+    searchTags,
+    positiveKeywords
+  };
+
+  saveButton.disabled = true;
+  saveButton.textContent = 'Saving...';
+
+  try {
+    const response = await fetch('http://localhost:3000/dev/upload/overviews', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to save gig overview');
+    }
+
+    const result = await response.json();
+    alert('Gig overview saved successfully!');
+  } catch (error) {
+    console.error('Error saving gig overview:', error);
+    alert('Failed to save gig overview. Please try again.');
+  } finally {
+    saveButton.disabled = false;
+    saveButton.textContent = 'Save';
+  }
+});
   </script>
 </html>
